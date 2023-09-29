@@ -77,11 +77,22 @@ class _PaginaInicioState extends State<MInhaPaginaInicial> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.nomeApp),
       ),
-      body: Center(
+      body: Column(
+        children: [
+          componenteFormulario(),
+          //componenteTexto(),
+          //componenteTxtNota1(),
+          //componenteTxtNota2(),
+          //componenteLblResposta(),
+          //componenteBtnCalcular(),
+        ],
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: componenteTexto(),
+        //child: componenteTexto(),
       ),
+      /**
+       * ou body: Center( child: componenteaq() ) -- somente 1 componente!"!!!!"
+       */
        // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
